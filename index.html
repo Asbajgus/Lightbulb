@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="lightBulb"></div>
+    <div class="screw1"></div>
+    <div class="screw2"></div>
+    <div class="screw3"></div>
+    <button id="toggleLight" onclick="toggleLight()">ON/OFF</button>
+    <style>
+        .lightBulb{
+            height: 150px;   
+            width: 120px;
+            border-radius: 100%; 
+            background-color: lightgrey;
+        }
+        .screw1{
+            height: 30px;
+            width: 70px;
+            background-color: grey;
+            transform: translateX(25px);
+            margin-top: -10px;
+        }
+        .screw2{
+            height: 25px;
+            width: 50px;
+            background-color: grey;
+            transform: translateX(35px);
+        }
+            
+        .screw3{
+            height: 25px;
+            width: 35px;
+            background-color: grey;
+            transform: translateX(43px);
+        } 
+        button{
+            transform: translateX(30px);
+            margin-top: 10px;
+        }  
+
+    .glow {
+        box-shadow: 0 0 40px 40px rgba(255, 255, 0, 0.5);
+        background-color: yellow;
+    }
+    </style>
+    <script>
+        function toggleLight(){
+      const lightBulb = document.querySelector('.lightBulb');
+        lightBulb.classList.toggle('glow');
+        }
+    </script>
+</body>
+</html>
